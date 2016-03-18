@@ -3,7 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if lte IE 9]>   <link rel="stylesheet"   href="css/style_ie_8.css">  <![endif]-->
+	<![if gt IE 9]> <link rel="stylesheet" href="css/style.css">   <![endif]>
+	
 </head>
 <body>
 	<header class="background background--header">
@@ -12,17 +16,24 @@
 			<nav class="menu menu--header">
 				<ul class="menu__ul">
 					<li class="menu__li"><a href="#" class="menu__a" >HOME</a></li>
-						<ul class="menu__drop">
-							<li><a href="">HOME 1</a></li>
-							<li><a href="">HOME 2</a></li>
-							<li><a href="">HOME 3</a></li>
-						</ul>
 					<li class="menu__li"><a href="#"  class="menu__a">ABOUT</a></li>
 					<li class="menu__li"><a href="#"  class="menu__a">BLOG</a></li>
 					<li class="menu__li"><a href="#"  class="menu__a">PRODUCTS</a></li>
 					<li class="menu__li"><a href="#"  class="menu__a">LOREM IPSUS</a></li>
 					<li class="menu__li"><a href="#"  class="menu__a">DOLOR SIT AMET</a></li>
 				</ul>
+				<ul class="menu-item480 menu-list-ferst">
+					<li class="menu-list"><a href="#">Home</a>
+						<ul>
+							<li class="menu-list"><a href="#">Home</a></li>
+							<li class="menu-list"><a href="#">About</a></li>
+							<li class="menu-list"><a href="#">Blog</a></li>
+							<li class="menu-list"><a href="#">Products</a></li>
+							<li class="menu-list"><a href="#">Lorem Ipsum</a></li>
+							<li class="menu-list"><a href="#">Dolor Sit Amet</a></li>
+						</ul>
+					</li>
+				</ul>			
 			</nav>
 		</div>
 		<div class="background background--ahead">
@@ -36,18 +47,20 @@
 					</p> 
 					<p class="article__text">
 						Semper sollicitudin gravida eget, ves-tibulum
-						sit amet sapien. Nunc dignis-sim tincidunt e
-						st, et auctor tuurpis ornare a.Nam venenatis
-						hendrerit estsim tincidunt est,et auctor tu
-						urpis ornare a.
+						 sit amet sapien. Nunc dignis-sim tincidunt e
+						 st, et auctor tuurpis ornare a.Nam venenatis
+						  hendrerit estsim tincidunt est,et auctor tu
+						  urpis ornare a.
 						Nam venenatis hendrerit est
-						hendrerit estsim tincidunt est,et auctor tu
-						hendrerit estsim tincidunt est,et auctor tu
+						 hendrerit estsim tincidunt est,et auctor tu
+						  hendrerit estsim tincidunt est,et auctor tu
 					</p>
 				</div>
 				<img src="img/Iphone_960.png" alt="iphone" class="background__img background__img--iphone"> 
-				<img src="img/slider-navigation.png" alt="navigation" class="background__img background__img--navigation">
-			</div>	
+				<img src="img/slider-navigation.png" alt="navigation" class="background__img background__img--navigation"> <!-- 8 -->
+              
+			</div>
+			
 		</div>
 	</header>
 	<main class="main">
@@ -61,9 +74,9 @@
 					<p class="article__text">
 						Nunc turpis neque, feugiat eget eleifend et, 
 						lacinia non neque. Praesent rhoncus ultrices
-						Nunc turpis neque, feugiat eget eleifend et, 
+						 Nunc turpis neque, feugiat eget eleifend et, 
 						lacinia non neque. Praesent rhoncus ultrices
-						posuere. Pellentesque 
+						 posuere. Pellentesque 
 					<a href="#" class="section__link"> READ MORE</a>
 					</p>
 				</div>
@@ -75,9 +88,9 @@
 					<p class="article__text">
 						Nunc turpis neque, feugiat eget eleifend et, 
 						lacinia non neque. Praesent rhoncus ultrices
-						Nunc turpis neque, feugiat eget eleifend et, 
+						 Nunc turpis neque, feugiat eget eleifend et, 
 						lacinia non neque. Praesent rhoncus ultrices
-						posuere. Pellentesque 
+						 posuere. Pellentesque 
 					<a href="#" class="section__link"> READ MORE</a>
 					</p>
 				</div>
@@ -89,9 +102,9 @@
 					<p class="article__text">
 						Nunc turpis neque, feugiat eget eleifend et, 
 						lacinia non neque. Praesent rhoncus ultrices
-						Nunc turpis neque, feugiat eget eleifend et, 
+						 Nunc turpis neque, feugiat eget eleifend et, 
 						lacinia non neque. Praesent rhoncus ultrices
-						posuere. Pellentesque
+						 posuere. Pellentesque 
 					<a href="#" class="section__link"> READ MORE</a>
 					</p>
 				</div>
@@ -106,15 +119,16 @@
 						"Nunc turpls neque, feuglat eget elelfend et, lacinia non neque.
 						 Praesent rhoncus ultrices posuere. Pelientesque vel lacus eget 
 						 nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar
-						 urna risus, mattis pulvinar bibendum in, venentis quis neque. Mauris nec 
-						 metus ultricies erat consequat dignissim non eu nisl. Nunc 
-						 turpls neque, feuglat eget elelfend et, lacinia non neque.
+						  urna risus, mattis pulvinar bibendum in, venentis quis neque. Mauris nec 
+						  metus ultricies erat consequat dignissim non eu nisl. Nunc 
+						  turpls neque, feuglat eget elelfend et, lacinia non neque.
 						 Praesent rhoncus ultrices posuere. Pelientesque vel lacus eget "
 					</p>
 				</div>
 				<div  class="article article--comment">
 				    <h2  class="article__headline">RECENT UPDATES</h2>
 					<div class="article__update article__update--1">
+
 						<h5 class="article__headline article__headline--comment">
 						Nunc turpis neque feugiat eget
 						</h5>
@@ -138,7 +152,9 @@
 						Posted by Admin on March 13 2012
 						</p>
 					</div>
+					<a href="#" class="main__link">MORE BLOG POSTS</a>
 				</div>
+
 			</div>
 		</section>
 		<div  class="background background--logosBox">
@@ -151,18 +167,25 @@
 				<div class="wrapper__item wrapper__item--6"></div>
 			</div>		
 		</div>
+		<!-- >460 -->
 		<section  class="background background--news">
 			<div class="wrapper clierfix">
 				<article  class="article article--news ">
+					<!-- !>960 -->
                     <h3 class="article__headline">
 						RECENT COMMENTS
 					</h3> 
+					<!-- /!>960 -->
+				    <!-- >960 -->
 					<img src="img/logo-bottom.png" alt="logo" class="article__logo">
 					<div class="article__text article__text--copyright">Copyright 2013, Pingbull AS</div>
+					<!-- />960 -->
+
+					
 					<p class="article__text">
 						Nunc turis neque, feugiat eget eleifend et, lacinia non neque.
-						Praesent rhoncus ulrtrices posuere. Pelien-tesque vel lacus eget
-						nisi convallis auctor. Nam vitae lectus eu libero pellentesque.
+						 Praesent rhoncus ulrtrices posuere. Pelien-tesque vel lacus eget
+						  nisi convallis auctor. Nam vitae lectus eu libero pellentesque.
 					</p>
 				</article>
 				<article class="article article--news ">
@@ -171,8 +194,8 @@
 					</h3> 
 					<p class="article__text">
 						Nunc turis neque, feugiat eget eleifend et, lacinia non neque.
-						Praesent rhoncus ulrtrices posuere. Pelien-tesque vel lacus eget
-						nisi convallis auctor. Nam vitae lectus eu libero pellentesque.
+						 Praesent rhoncus ulrtrices posuere. Pelien-tesque vel lacus eget
+						  nisi convallis auctor. Nam vitae lectus eu libero pellentesque.
 					</p>
 				</article>
 				<article class="article article--news">
@@ -181,12 +204,13 @@
 					</h3> 
 					<p class="article__text">
 						Nunc turis neque, feugiat eget eleifend et, lacinia non neque.
-						Praesent rhoncus ulrtrices posuere. Pelien-tesque vel lacus eget
-						nisi convallis auctor. Nam vitae lectus eu libero pellentesque.
+						 Praesent rhoncus ulrtrices posuere. Pelien-tesque vel lacus eget
+						  nisi convallis auctor. Nam vitae lectus eu libero pellentesque.
 					</p>
 				</article>
 			</div>
 		</section>
+		<!-- />460 -->
 	</main>
 	<footer class="footer">
 		<div class="wrapper clierfix">
