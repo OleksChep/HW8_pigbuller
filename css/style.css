@@ -806,7 +806,7 @@
 	float:right;
 	margin-right: 15px
 	}
-}
+	}
 											/*-- 960px --*/
 	@media (min-width:  960px){
 	.menu-item480{
@@ -962,4 +962,4 @@
 	margin-top:-15px;
 	margin-left:77%;
     }
-}
+	}
