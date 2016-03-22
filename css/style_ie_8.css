@@ -60,7 +60,7 @@
     font-weight: bold;
 	}
 	.article--header .article__text--sliderSlogan{
-    color:#edbfff !important;
+    color:#edbfff; /* !important; */
     font-weight: bold;
 	}
 	.article--description .article__text{
@@ -84,16 +84,33 @@
 	.article--description--3:before{
 	background-position: 57px 0px;
 	}
-	.article--description:after{
-	position:absolute;
-	bottom:-50px;
-	right:14px;
-	width:80px;
-	height: 28px;
-	content:'READ MORE';
-	font-size:13px;
+	.section__link {
+	padding-right: 13px;
+	padding-top: 20px;
+	font-family: Tahoma,sans-serif;
+	font-size: 12px;
 	font-weight: bold;
-	color:white;
+	float: right;
+	text-decoration: none;
+	color: white;
+	}
+	.section__link:hover {
+	text-decoration: underline;
+	color: white;
+	}
+	.main__link {
+	float: right;
+	font-family: "League Gothic Regular", Tahoma,sans-serif;
+	font-size: 14px;
+	color: #454545;
+	text-decoration: none;
+	margin-top: 23px;
+	padding-right: 22px;
+	}
+	.main__link:hover {
+	text-decoration: underline;
+	color: #454545;
+	font-weight: bold;
 	}
 	.background--comment{
 	background-color: #f9f9f9;
@@ -218,10 +235,16 @@
 	color:white;
 	text-decoration: none;
 	}
+	.menu-item480 {
+	display: none;
+	position: relative;
+	padding-left: 50px;
+	list-style: none;
+	}
     .article--header{
     position:absolute;
-    top:83px;
-    width:505px;
+    top: 83px;
+    width: 505px;
     }
     .article--header .article__headline{
     font-size: 35px;
@@ -234,59 +257,59 @@
 	}
 	.background--ahead .background__img{
 	position: absolute;
-	display:block;
+	display: block;
 	}
     .background--ahead .background__img--iphone{
-	top:-20px;
-	right:15%;
+	top: -20px;
+	right: 15%;
     }
 	.background--ahead .background__img--navigation{
-	bottom:-450px;                
-	right:50%;
+	bottom: -450px;                
+	right: 50%;
 	}
 	.background--ahead:before{
-	top:186px;
-	left:4%;                
+	top: 186px;
+	left: 4%;                
 	}
 	.background--ahead:after{
-	top:186px;
+	top: 186px;
 	right: 4%;
 	}
 	.background--description{
-	padding-top:77px;
-	height:266px;
+	padding-top: 77px;
+	height: 266px;
 	}
 	.article--header{
-	width:502px;
-	color:#fff;
+	width: 502px;
+	color: #fff;
 	margin-left: 7%;
 	}
 	.article--description {
-	width:250px;
-	margin:0px 30px;
+	width: 250px;
+	margin: 0px 30px;
     }
     .article--description:before {
-	left:-15%;
-	top:5px;
+	left: -15%;
+	top: 5px;
     }
 	.article__headline {
-	font-size:16px;
+	font-size: 16px;
 	}
 	.article__text {
-	font-size:14px;
+	font-size: 14px;
 	}
 	.background--comment {
-	padding-top:102px;
-    height:507px;
-    z-index:-2;
+	padding-top: 102px;
+    height: 507px;
+    z-index: -2;
 	}
 	.article--pinguller {
 	background-image: url("../img/wBox_960px.png");
-	padding:20px;
-	width:360px;
-	height:252px;
-	z-index:-1; 
-	position:relative;
+	padding: 20px;
+	width: 360px;
+	height: 252px;
+	z-index: -1; 
+	position: relative;
 	line-height: 22px;
 	margin-left: 50px;
     }
@@ -298,57 +321,51 @@
 	font-weight: bold;
     }
     .article--comment{
-    padding:20px 60px;
-    width:380px;
-	height:234px;
+    padding: 20px 60px;
+    width: 380px;
+	height: 234px;
     }
 	.article--pinguller:after{
-	left:170px;
-	bottom:-30px;
-	}
-	.article--comment:after
-	{
-	position:absolute;
-	content:'READ MORE HERE';
-	right:110px;
-	bottom:-10px;
-	font-size:13px;
-	font-weight: bold;
+	left: 170px;
+	bottom: -30px;
 	}
 	.background--news{
-    height:396px;
+    height: 396px;
 	}
 	.wrapper{
-	width:960px;
+	width: 960px;
 	}
 	.background--logosBox .wrapper__item{
-  	margin:20px 30px;
+  	margin: 20px 30px;
   	}
- 	 .background--logosBox{
+ 	 .background--logosBox {
 	height: 121px;
 	}
-	.article--news{
-	padding:97px 53px 97px 0px;
-    width:260px;
+	.article--news {
+	padding: 97px 53px 97px 0px;
+    width: 260px;
 	}
-	.article--news:first-of-type .article__headline{
+	.article--news:first-of-type .article__headline {
     font-size: 0px;
 	}
-	.article__text--copyright{
+	.article__text--copyright {
 	font-style: italic;
-	color:#c5c5c5;
+	color: #c5c5c5;
 	}
-	.footer{
-	padding-top:40px;
-	height:94px;
+	.footer {
+	padding-top: 40px;
+	height: 94px;
 	}
 	.menu--footer {
-    width:600px;
+    width: 600px;
 	}
-	.menu__a{
+	.menu--footer .menu__a:hover {
+	border-bottom: 2px solid #edbfff;
+	}
+	.menu__a {
 	font-size: 16px;
 	}
-	.copyrights{
-	margin-top:-15px;
-	margin-left:77%;
+	.copyrights {
+	margin-top: -15px;
+	margin-left: 77%;
     }
