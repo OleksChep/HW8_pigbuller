@@ -34,7 +34,8 @@
 	.background--ahead .background__img{
 	position: absolute;
 	}
-	.background--description{	
+	.background--description{
+	background-color: #775385;
 	background: linear-gradient(to bottom,#775385,#36293d);
 	}
 	.background--ahead{
@@ -51,13 +52,15 @@
 	display:block;
 	}
 	.background--ahead::after{
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
 	}
 	.article{
 	float:left;
 	}
 	.article--description{
-	position:relative;
+	position: relative;
 	}
     .article--header .article__headline{
      color:#FFF;
@@ -530,18 +533,6 @@
 	/* margin-bottom: 200px; */
 	/* border-bottom: 2px solid #edbfff; */
 	}
-	.menu-list a:hover{
-	/* border-bottom: 2px solid #edbfff; */
-	}	
-		/* .wrapper {
-	padding-left: 70px;
-    padding-top: 30px;
-	width:280px;
-    display: block;
-    text-align: center;
-    position: relative;
-	} */
-		
 		.wrapper{
 		width:420px;
 		padding:0px 20px;
@@ -944,7 +935,7 @@
     font-size: 35px;
 	}
     .article__text--sliderSlogan{
-     font-size: 25px;
+    font-size: 25px;
 	}
     .article--header .article__text{
     font-size: 20px;
@@ -953,11 +944,11 @@
 	top:-20px;
 	right:15%;
     }
-   .background--ahead .background__img:last-of-type{
+	.background--ahead .background__img:last-of-type{
 	bottom:-450px;   
 	right:50%;
 	}
-   .background--ahead::before{
+	.background--ahead::before{
 	top:186px;
 	left:4%;                
 	}
@@ -990,7 +981,7 @@
 	}
 	.background--comment{
 	padding-top:102px;
-     height:507px;
+    height:507px;
 	}
 	.article--pinguller{
 	background-image: url("../img/wBox_960px.png");
@@ -1020,40 +1011,40 @@
     height:396px;
 	}
 	.wrapper{
-	width:960px;
+	width: 960px;
 	}
 	.background--logosBox .wrapper__item{
-  	margin:20px 30px;
+  	margin: 20px 30px;
 	}
 	.background--logosBox{
 	height: 121px;
 	}
 	.article--news{
-	padding:97px 53px 97px 0px;
-    width:260px;
+	padding: 97px 53px 97px 0px;
+    width: 260px;
 	}
 	.article--news:first-of-type .article__headline{
     font-size: 0px;
 	}
 	.article__text--copyright{
 	font-style: italic;
-	color:#c5c5c5;
+	color: #c5c5c5;
 	}
 	.footer{
-	padding-top:40px;
-	height:94px;
+	padding-top: 40px;
+	height: 94px;
 	}
 	.menu--footer{
-     width:600px;
+     width: 600px;
 	}
 	.menu__a{
 	font-size: 16px;
 	}
 	.menu--footer .menu__a:hover{
-	border-bottom:2px solid #edbfff;
+	border-bottom: 2px solid #edbfff;
 	}
 	.copyrights{
-	margin-top:-15px;
-	margin-left:77%;
+	margin-top: -15px;
+	margin-left: 77%;
     }
 	}
