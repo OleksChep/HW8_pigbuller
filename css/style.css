@@ -36,6 +36,7 @@
 	}
 	.background--description{
 	background-color: #775385;
+	background: -webkit-linear-gradient(top,#775385,#36293d);
 	background: linear-gradient(to bottom,#775385,#36293d);
 	}
 	.background--ahead{
@@ -252,7 +253,7 @@
 	}
 	.menu-item480 .menu-list ul li:first-child{
     padding-top: 14px;
-	border-bottom:2px solid #edbfff;
+	/* border-bottom:2px solid #edbfff; */
 	}
 	.menu-item480 .menu-list ul li{
 	display: block;
@@ -313,7 +314,7 @@
 	/* border-bottom: 2px solid #edbfff; */
 	}
 	.menu-list a:hover{
-	border-bottom: 2px solid #edbfff;
+	/* border-bottom: 2px solid #edbfff; */
 	}	
 	/* @media(max-width: 479px) */	
 	.background--header{
@@ -348,6 +349,7 @@
 	.article--header .article__text--sliderSlogan{
 	font-size: 10px;
 	text-align: center;
+	color:#edbfff;
 	}
 	.article--header .article__text:last-of-type{
 	font-size:0;
@@ -478,7 +480,7 @@
 	}
 	.menu-item480 .menu-list ul li:first-child{
     padding-top: 10px;
-	border-bottom: 2px solid #edbfff;
+	/* border-bottom: 2px solid #edbfff; */
 	}
 	.menu-item480 .menu-list ul li{
 	display: block;
@@ -607,8 +609,8 @@
 		display:none;
 		padding:12px 0px 20px 0px;
 		text-align: center;
-		border-bottom:1px solid #36293e;
- 		border-bottom:1px solid #523e5a;
+		/* border-bottom:1px solid #36293e;
+ 		border-bottom:1px solid #523e5a; */
 		}
 		.menu--header .menu__a {
 		color:white;
@@ -638,12 +640,14 @@
 		}
 		.article--header  .article__headline{
 		font-size:24px;
+		/* color: red; */
 		}
 		.article--header .article__text{
         font-size:0px;
 		}
-		.article--header .article__text--sliderSlogan{
-	    font-size:14px;
+		.article__text .article__text--sliderSlogan{
+	    font-size: 14px;
+		color: #edbfff;
 		}
 		.background--comment{
         height:788px;
@@ -766,13 +770,15 @@
     }
     .article--header .article__headline{
     font-size: 25px;
+	color:#fff;
 	}
     .article--header .article__text{
     font-size: 15px;
     color:#fff;
     }
-    .article__text--sliderSlogan{
-    font-size: 20px;
+    .article--header .article__text--sliderSlogan{
+    font-size: 18px;
+	color: #edbfff;
 	}
 	.background--ahead .background__img:first-of-type{
 	top:-20px;
