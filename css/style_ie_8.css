@@ -8,10 +8,17 @@
 	clear:both;
 	display:block;
 	}
+	body {
+		position: relative;
+	overflow-x: hidden;
+	}
 	.background--header{
 	display:block;
 	background: url(../img/top-background.jpg) top center no-repeat;
-	background-size: cover;
+	/* background-size: cover; */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
 	}
 	.logo{
 	display: block;
@@ -30,9 +37,11 @@
 	}
 	.background--description{	
 	background-color: #775385;
+	background-size: 100%;
 	}
 	.background--ahead{
 	background-image: url("../img/opa.png");
+	background-size: 100%;
 	}
 	.background--ahead:before,
 	.background--ahead:after{
@@ -208,12 +217,21 @@
 	text-decoration: none;
 	}
 	.background--header{
+		width: 100%;
 	height:846px;
-    background-image: url("../img/background--header_960px.jpg");   
-	}
+    background-image: url("../img/background--header_960px.jpg"); 
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 150%; /* Современные браузеры */
+	background-position: left, right;
+   
+	} 
 	.wrapper--header{
 	padding-top:70px;
-	height:208px
+	height:208px;
+	position: relative;
+	width: 100%;
 	}
    .background--ahead{
 	height:400px;
@@ -283,10 +301,12 @@
 	width: 502px;
 	color: #fff;
 	margin-left: 7%;
+	
 	}
 	.article--description {
 	width: 250px;
 	margin: 0px 30px;
+	position: relative;
     }
     .article--description:before {
 	left: -15%;
